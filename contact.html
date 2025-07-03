@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Climatisateurs écologiques à bas prix">
+    <title>Contact - GreenLink</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main id="contact-main">
+
+        <h1>Contact</h1>
+
+        <div id="content">
+            <div id="form-container">
+
+                <form id="contact-form">
+                    <label>Nom
+                        <input type="text" name="nom" required>
+                    </label>
+
+                    <label>Email
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label>Message
+                        <textarea oninput="autoGrow(this)" name="message" required></textarea>
+                    </label>
+
+                    <label for="">
+                        <input type="submit" name="submit" value="Envoyer" class="btn">
+                    </label>
+                    
+                </form>
+                
+                <div id="feedback"></div>
+
+            </div>
+
+            <div id="contact-info">
+                    <ul id="infos">
+                        <li><i class="fa-solid fa-phone"></i><p>+33.03.12.34.56.78</p></li>
+                        <li><i class="fa-solid fa-location-dot"></i><p>1 rue Dupont, 67000 Strasbourg</p></li>
+                        <li><i class="fa-solid fa-envelope"></i><p>contact@greenlink.com</p></li>
+                    </ul>
+
+
+                <img src="assets/img/greenlinkac_contact.png" alt="2 GreenClims, produits far de la société">
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="https://kit.fontawesome.com/19a031a4c5.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script>loadFooter();</script>
+    <script>loadNavbar();</script>
+</body>
+</html>

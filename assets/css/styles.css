@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap');
+
+:root{
+    --bg1: #f5f3dc;
+    --bg2: #CEDACA;
+    --txt: #2B4141;
+}
+
+body{
+    background-color: var(--bg1);
+    font-family: 'Lunasima';
+    color: var(--txt);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h3{
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+.btn{
+    border: none;
+    border-radius: 50px;
+    background-color: var(--txt);
+    padding: 1.25rem;
+    color: var(--bg1);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* ACCUEIL */
+
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5% 10%;
+        gap: 15%;
+    }
+
+    .section-img{
+        width: 40%;
+    }
+
+    #qui{
+        background-color: var(--bg2);
+    }
+
+    #qui-img{
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    #valeurs-chiffres{
+        min-width: 40%;
+    }
+
+    .source{
+        font-size: 16px;
+    }
+
+
+/* PRODUITS */
+
+    .product{
+        border: var(--txt) 3px solid;
+        border-radius: 30px;
+        background-color: var(--bg2);
+        display: flex;
+        align-items: flex-end;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        font-size: 20px;
+        width: 50%;
+        min-height: 100%;
+    }
+
+    .product-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product img{
+        width: 50%;
+    }
+
+    #comment{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .comment-line{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 5% 0;
+    }
+
+    .comment-line img{
+        border-radius: 30px;
+        width: 100%;
+    }
+
+/* CONTACT */
+
+    #contact-main{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    #content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #form-container{
+        min-width: 50%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    input[type=text], input[type=email], textarea{
+        width: 20em;
+        padding: 1em 2em;
+        margin-top: .5em;
+        margin-bottom: 1em;
+        display: inline-block;
+        border: var(--txt) 2px solid;
+        border-radius: 50px;
+        background-color: transparent;
+        font-family: "Lunasima";
+        color: var(--txt);
+        font-size: 16px;
+    }
+
+    input[type=submit]{
+        width: 20em;
+        padding: 1em 2em;
+    }
+
+    textarea{
+        resize: none;
+        overflow: hidden;
+        min-height: 10em;
+        max-height: 20em;
+    }
+
+    #contact-main img{
+        max-width: 50%;
+    }
+
+    #infos{
+        list-style-type: none;
+    }
+
+    #infos li{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+
+/* MOBILE RESPONSIVE */
+
+@media only screen and (max-width: 600px){
+
+    section{
+        flex-direction: column;
+    }
+
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-text h2{
+        text-align: center;
+    }
+
+}

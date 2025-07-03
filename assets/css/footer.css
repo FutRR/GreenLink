@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 0 2.5%;
+    background-color: var(--txt);
+}
+
+#footer-logo{
+    width: 15%;
+}
+
+#footer-links{
+    display: flex;
+    align-items: center;
+}
+
+#footer-links *{
+    font-size: 20px;
+    color: var(--bg1);
+    text-decoration: none;
+    margin: 1em;
+}
