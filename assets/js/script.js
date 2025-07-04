@@ -44,3 +44,25 @@ function menuChange(x) {
     console.log("navlinks is null!");
   }
 }
+
+function isMobile() {
+  return window.innerWidth <= 600;
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !isMobile()) {
+      entry.target.style.opacity = "1";
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+document.querySelectorAll(".fade-in").forEach((el) => {
+  if (!isMobile()) {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(20px)";
+    el.style.transition = "all 1s ease";
+    observer.observe(el);
+  }
+});
