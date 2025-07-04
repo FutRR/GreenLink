@@ -21,3 +21,22 @@ footer{
     text-decoration: none;
     margin: 1em;
 }
+
+/* MOBILE RESPONSIVE */
+
+@media only screen and (max-width: 600px){
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-logo{
+        width: 45vw;
+    }
+
+    #footer-links{
+        flex-direction: column;
+    }
+}

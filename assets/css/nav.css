@@ -23,12 +23,26 @@ nav{
     text-decoration: none;
     font-size: 20px;
     margin: 1em;
+    position: relative;
+    display: inline-block;
 }
 
-.nav-link:hover{
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 2px;
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--txt);
+    transform-origin: bottom right;
+    transition: transform 250ms ease-out;
+}
+
+.nav-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #menuburger{
@@ -76,7 +90,9 @@ nav{
     #nav-links{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        gap: 10%;
         list-style-type: none;
         position: fixed;
         top: 0;
@@ -86,7 +102,11 @@ nav{
         margin-top: -100vh;
         transition: margin-top 250ms ease;
         background-color: #2B4141;
-        color: #f5f3dc !important;
+    }
+
+    .nav-link{
+        font-size: 24px;
+        color: #f5f3dc;
     }
 
     #nav-links.mobile-menu{

@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Climatisateurs écologiques à bas prix">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - GreenLink</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -16,29 +20,27 @@
 
         <h1>Contact</h1>
 
-        <div id="content">
+        <div id="contact-content">
             <div id="form-container">
 
-                <form id="contact-form">
+                <form id="contact-form" onsubmit="return validateForm(event)">
                     <label>Nom
-                        <input type="text" name="nom" required>
+                        <input type="text" name="nom" placeholder="Votre nom" required>
                     </label>
 
                     <label>Email
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" placeholder="Votre adresse mail" required>
                     </label>
 
                     <label>Message
-                        <textarea oninput="autoGrow(this)" name="message" required></textarea>
+                        <textarea oninput="autoGrow(this)" name="message" placeholder="Votre message" required></textarea>
                     </label>
 
-                    <label for="">
-                        <input type="submit" name="submit" value="Envoyer" class="btn">
-                    </label>
+                    <input type="submit" name="submit" value="Envoyer" class="btn">
                     
                 </form>
-                
-                <div id="feedback"></div>
+
+                <span id="form-message"></span>
 
             </div>
 
@@ -50,7 +52,7 @@
                     </ul>
 
 
-                <img src="assets/img/greenlinkac_contact.png" alt="2 GreenClims, produits far de la société">
+                <img src="assets/img/greenlinkac_contact (1).webp" alt="2 GreenClims, produits far de la société">
             </div>
         </div>
 
@@ -60,6 +62,7 @@
 
     <script src="https://kit.fontawesome.com/19a031a4c5.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js" defer></script>
     <script>loadFooter();</script>
     <script>loadNavbar();</script>
 </body>
