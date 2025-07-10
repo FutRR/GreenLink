@@ -14,12 +14,12 @@ Un site web moderne et responsive pour GreenLink, une entreprise française spé
 
 1. **Cloner le repository**
    ```bash
-   git clone https://github.com/votre-nom/greenlink-website.git
+   git clone https://github.com/futrr/greenlink
    ```
 
 2. **Naviguer vers le dossier du projet**
    ```bash
-   cd greenlink-website
+   cd greenlink
    ```
 
 3. **Lancer le site web**
