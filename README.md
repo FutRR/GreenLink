@@ -35,11 +35,6 @@ Un site web moderne et responsive pour GreenLink, une entreprise française spé
      # Avec PHP
      php -S localhost:8000
      ```
-
-## License
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ---
 
 🌱 **GreenLink** - La Clim Éco, c'est maintenant !
